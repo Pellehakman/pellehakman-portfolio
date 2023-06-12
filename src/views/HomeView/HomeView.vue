@@ -1,4 +1,5 @@
 <script src="./HomeView" lang="ts">
+import Card1 from '@/components/Card1/Card1';
 import Hero from '@/components/Hero/Hero';
 
 
@@ -13,6 +14,8 @@ import Hero from '@/components/Hero/Hero';
     </section>
   </header>
   <Hero/>
+  <Card1 />
+  <Card2 />
 
   <main>
    

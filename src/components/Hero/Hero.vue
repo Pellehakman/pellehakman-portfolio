@@ -5,7 +5,7 @@
     <section class="bg-red-500 flex-1">design</section>
 
     <div class=" bg-red-300 flex-1 flex justify-center items-center">
-        <img class=" absolute" :src="in_love" alt="">
+        <img class=" absolute" :src="undraw_love_it" alt="">
     </div>
     
     <section class="bg-red-400 flex-1">code</section>

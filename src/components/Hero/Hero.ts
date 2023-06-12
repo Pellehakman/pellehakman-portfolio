@@ -1,5 +1,5 @@
 import { defineComponent } from "vue";
-import in_love from '@/assets/svg/undraw_in_love.svg'
+import undraw_love_it from '@/assets/svg/undraw_love_it.svg'
 
 export default defineComponent({
     name: '_Hero',
@@ -7,7 +7,7 @@ export default defineComponent({
 
 
         return{
-            in_love
+            undraw_love_it
 
         }
     }
