@@ -1,0 +1,21 @@
+<script src="./siteNav.ts" lang="ts"></script>http://localhost:5173/
+
+<template>
+<nav class=" py-12 bg-white flex justify-between items-center">
+  <RouterLink to="/">
+    <span class=" font-poiret text-black text-2xl ">HOME</span>
+  </RouterLink>
+  <div class="flex gap-12">
+  <RouterLink to="/">
+    <span class=" font-poiret text-black text-2xl">ABOUT</span>
+  </RouterLink>
+  <RouterLink to="/">
+    <span class=" font-poiret text-black text-2xl">RESUME</span>
+  </RouterLink>
+</div>
+</nav>
+</template>
+
+<style>
+
+</style>

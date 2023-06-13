@@ -6,7 +6,10 @@
 
 @layer base {
 body{
-    @apply bg-white
+    @apply bg-white h-full w-full
+  }
+  #app {
+    @apply h-full w-full
   }
   
 }

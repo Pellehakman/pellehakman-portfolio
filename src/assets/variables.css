@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Over+the+Rainbow&family=Poiret+One&display=swap');
+
 
 
 :root{
@@ -38,6 +39,8 @@
     --ff-francois: 'Francois One', sans-serif;
     --ff-roboto: 'Roboto Condensed', sans-serif;
     --ff-oranienbaum: 'Oranienbaum', serif; 
+    --ff-poiret: 'Poiret One', cursive;
+    
   }
 
 

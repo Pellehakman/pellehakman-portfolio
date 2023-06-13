@@ -62,7 +62,8 @@ module.exports = {
       fontFamily: {
         francois: ['var(--ff-francois)'],
         roboto: ['var(--ff-roboto)'],
-        oranienbaum: ['var(--ff-oranienbaum)']
+        oranienbaum: ['var(--ff-oranienbaum)'],
+        poiret: ['var(--ff-poiret)']
       },
       backgroundImage: {
         pubg: "url('/src/assets/PUBG.jpeg')"

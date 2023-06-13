@@ -1,4 +1,4 @@
-<script src="./Hero.ts" lang="ts"></script>
+<script src="./siteHero.ts" lang="ts"></script>
 
 <template>
 <div class="max-w-screen-xl mx-auto flex justify-between mt-12 bg-stone-200">
