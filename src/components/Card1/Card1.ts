@@ -8,7 +8,7 @@ export default defineComponent({
         const expand = ref(false)
         function toNext(){
             console.log('hej')
-            expand.value = true
+            expand.value =! expand.value
         }
 
 

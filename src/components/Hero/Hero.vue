@@ -1,15 +1,23 @@
 <script src="./Hero.ts" lang="ts"></script>
 
 <template>
-<div class="max-w-screen-xl mx-auto bg-slate-400 flex justify-between h-96 mt-12">
-    <section class="bg-red-500 flex-1">design</section>
+<div class="max-w-screen-xl mx-auto flex justify-between mt-12 bg-stone-200">
+    <section class="  flex-1 p-12">
+      <h2 class=" font-oranienbaum text-5xl">What about design?</h2>
+      <p>I believe a good design comes from good research and a creative mind. Learning the users need and experience and giving them the product they need.</p>
+    </section>
 
-    <div class=" bg-red-300 flex-1 flex justify-center items-center">
-        <img class=" absolute" :src="undraw_love_it" alt="">
+    <div class=" px-24 flex justify-center items-center">
+        <img class=" absolute scale-75" :src="undraw_love_it" alt="">
     </div>
     
-    <section class="bg-red-400 flex-1">code</section>
+    <section class=" flex-1 p-12">
+      <h2 class=" font-oranienbaum text-5xl text-end">... and coding?</h2>
+      <p>I believe a good design comes from good research and a creative mind. Learning the users need and experience and giving them the product they need.</p>
+    </section>
   </div>
 </template>
 
-<style></style>
+<style>
+
+</style>
