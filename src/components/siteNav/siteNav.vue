@@ -1,7 +1,8 @@
 <script src="./siteNav.ts" lang="ts"></script>http://localhost:5173/
 
 <template>
-<nav class=" py-12 bg-white flex justify-between items-center">
+  <div class="w-full top-0 sticky bg-white transition-all " ref="navbarRef">
+<nav class="h-20 max-w-7xl mx-auto flex justify-between items-center">
   <RouterLink to="/">
     <span class=" font-poiret text-black text-2xl ">HOME</span>
   </RouterLink>
@@ -14,6 +15,7 @@
   </RouterLink>
 </div>
 </nav>
+</div>
 </template>
 
 <style>

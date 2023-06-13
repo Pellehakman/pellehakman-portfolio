@@ -6,7 +6,7 @@
 <header class=" bg-gradient-to-r from-neutral-300 to-neutral-400 ">
   <div class="max-w-screen-xl mx-auto flex py-12">
    
-      <section class=" text-black  pl-12 py-24 ">
+      <section class=" text-black py-24 ">
       <h1 class=" font-poiret text-7xl">Hi. I'm <span class="text-blue-500">Pelle</span></h1>
       <h2 class=" font-poiret text-3xl">I am a Web designer and frontend developer.</h2>
       <p>This portfolio displays what i’ve learned so far. And for you reading this, knowing I want to learn more.</p>
