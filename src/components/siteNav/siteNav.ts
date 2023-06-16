@@ -5,7 +5,7 @@ export default defineComponent({
   name: 'SiteNav',
   setup() {
     const prevScrollPos = ref(window.pageYOffset)
-    const navbarRef = ref(null)
+    const navbarRef = ref<any>(null)
 
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset

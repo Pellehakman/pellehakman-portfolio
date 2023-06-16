@@ -1,14 +1,22 @@
 <script src="./siteNav.ts" lang="ts"></script>
-http://localhost:5173/
 
 <template>
-  <div ref="navbarRef" class="w-full top-0 sticky bg-white transition-all">
+  <div
+    ref="navbarRef"
+    class="w-full top-0 sticky bg-white transition-all"
+  >
     <nav class="h-20 max-w-7xl mx-auto flex justify-between items-center">
-      <RouterLink class="one" to="/">
+      <RouterLink
+        class="one"
+        to="/"
+      >
         <span class="font-poiret text-black text-2xl">HOME</span>
       </RouterLink>
       <div class="flex gap-12">
-        <RouterLink class="two" to="/about">
+        <RouterLink
+          class="two"
+          to="/about"
+        >
           <span class="font-poiret text-black text-2xl">ABOUT</span>
         </RouterLink>
         <RouterLink to="/resume">
