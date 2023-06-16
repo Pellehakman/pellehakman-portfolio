@@ -2,13 +2,13 @@
 
 <template>
   <div
+    ref="targetEl"
 
     class="h-screen bg-black flex justify-center items-center snap-center overflow-y-hidden "
   >
     <h1
-      v-motion-slide-visible-top
+
       class="snap-center text-white font-poiret text-7xl"
-      :delay="400"
     >
       1 Nice. Let's fire this portfolio up!
     </h1>

@@ -24,6 +24,7 @@
         </RouterLink>
       </div>
     </nav>
+    <progressBar />
   </div>
 </template>
 

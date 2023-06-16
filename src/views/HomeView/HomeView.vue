@@ -10,8 +10,11 @@
     </div>
   </div>
   <div class=" overflow-hidden">
-    <Card2 />
-
+    <Card2 class="bg-teal-500" />
     <Card3 />
   </div>
 </template>
+
+<style>
+
+</style>
