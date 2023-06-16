@@ -1,8 +1,8 @@
 import { defineComponent, ref } from 'vue'
-import man from '@/assets/svg/man-1.svg'
+import clicking from '@/assets/svg/clicking.svg'
 
 export default defineComponent({
-  name: 'Hero',
+  name: 'smallCards',
   setup() {
     const expand = ref(false)
     function toNext() {
@@ -11,7 +11,7 @@ export default defineComponent({
     }
 
     return {
-      man,
+      clicking,
       toNext,
       expand
     }

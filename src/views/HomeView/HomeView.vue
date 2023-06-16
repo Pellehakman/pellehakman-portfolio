@@ -1,22 +1,19 @@
-<script src="./HomeView" lang="ts">
+import Card3 from '@/components/Card3/Card3';
 
-
-
-</script>
+<script src="./HomeView" lang="ts"></script>
 
 <template>
+  <div class="snap-both">
+    <siteNav class="snap-center" />
+    <div class="h-[calc(100vh-80px)] flex flex-col">
+      <siteHeader />
 
-    <siteNav class=""/>
-    <div class=" h-[calc(100vh-80px)] flex flex-col">
-    <siteHeader />
-    <!-- <Card1/> -->
-  
-        <div class="flex h-full">
-          <Card1 />
-            
-        </div>
-
-</div>
-  <Card2 />
+      <div class="flex h-full">
+        <smallCards />
+      </div>
+    </div>
+    <Card2 />
+    <Card3 />
+  </div>
 </template>
- <!-- <siteHero/> -->
+

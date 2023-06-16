@@ -3,15 +3,29 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-body{
-    @apply bg-white h-full w-full
+  body {
+    @apply bg-white h-full w-full;
   }
   #app {
-    @apply h-full w-full
+    @apply h-full w-full;
   }
-  
+}
+
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
 }
 
 @layer components {

@@ -1,51 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Over+the+Rainbow&family=Poiret+One&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Over+the+Rainbow&family=Poiret+One&display=swap');
+:root {
+  --primary: #0f0d15;
+  --background: #e6e6e6;
+  --secondary: rgb(11, 99, 150);
+  --borderColor: rgb(0, 0, 0);
+  --input: #1e1e1ec1;
+  --monestral: #09080c;
 
+  --primary-500: #1eadff;
+  --primary-600: #068fff;
+  --primary-700: #007bff;
 
+  --success-500: #138e76;
+  --success-600: #157866;
+  --success-700: #155a4f;
 
-:root{
-    --primary: #0F0D15;
-    --background: #e6e6e6;
-    --secondary: rgb(11, 99, 150);
-    --borderColor: rgb(0, 0, 0);
-    --input: #1e1e1ec1;
-    --monestral: #09080c;
+  --warning-600: #cab902;
+  --warning-700: #a38805;
+  --warning-800: #866a0d;
 
-    --primary-500: #1eadff;
-    --primary-600: #068fff;
-    --primary-700: #007bff;
-    
-    --success-500: #138e76;
-    --success-600: #157866;
-    --success-700: #155a4f;
+  --danger-600: #bc4246;
+  --danger-700: #9d3339;
+  --danger-800: #842d35;
 
-    --warning-600: #cab902;
-    --warning-700: #a38805;
-    --warning-800: #866a0d;
+  --black: #0c0d0c;
+  --white: #ffffff;
+  --gray: #606060;
 
-    --danger-600: #bc4246;
-    --danger-700: #9d3339;
-    --danger-800: #842d35;
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(0, 0, 0);
+  --bg-menu-secondary: #1f1f1f;
+  --bg-menu-primary: #141414;
 
-    --black: #0C0D0C;
-    --white: #ffffff;
-    --gray: #606060;
-    
-    --text-primary: rgb(255, 255, 255);
-    --text-secondary: rgb(0, 0, 0);
-    --bg-menu-secondary: #1f1f1f;
-    --bg-menu-primary: #141414;
-    
-    --ff-francois: 'Francois One', sans-serif;
-    --ff-roboto: 'Roboto Condensed', sans-serif;
-    --ff-oranienbaum: 'Oranienbaum', serif; 
-    --ff-poiret: 'Poiret One', cursive;
-    
-  }
+  --ff-francois: 'Francois One', sans-serif;
+  --ff-roboto: 'Roboto Condensed', sans-serif;
+  --ff-oranienbaum: 'Oranienbaum', serif;
+  --ff-poiret: 'Poiret One', cursive;
+}
 
-
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
