@@ -3,18 +3,19 @@
 <template>
   <siteNav />
 
-  <div class="h-[calc(100vh-80px)] flex flex-col">
+  <div class="h-[calc(100vh-64px)] flex flex-col">
     <siteHeader />
     <div class="flex h-full">
       <smallCards />
     </div>
   </div>
-  <div class=" overflow-hidden">
-    <Card2 class="bg-teal-500" />
-    <Card3 />
+  <div class="">
+    <Card2 class="" />
+    <Card3 class="" />
   </div>
 </template>
 
 <style>
+
 
 </style>

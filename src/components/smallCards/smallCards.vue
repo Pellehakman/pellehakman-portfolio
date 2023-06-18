@@ -1,7 +1,7 @@
 <script src="./smallCards.ts" lang="ts"></script>
 
 <template>
-  <section class="bg-stone-950 flex-1 flex flex-col font-poiret text-white p-12 transition-all">
+  <section class="bg-stone-950 flex-1 flex flex-col font-poiret text-white p-12 transition-all hover:scale-90 cursor-pointer">
     <h1 class="text-5xl pb-8">
       UX
     </h1>
@@ -15,7 +15,7 @@
       </button>
     </div>
   </section>
-  <section class="bg-teal-950 flex-1 flex flex-col font-poiret text-white p-12 transition-all">
+  <section class="bg-teal-950 flex-1 flex flex-col font-poiret text-white p-12 transition-all hover:scale-90 cursor-pointer">
     <h1 class="text-5xl pb-8">
       UI
     </h1>
@@ -29,7 +29,7 @@
       </button>
     </div>
   </section>
-  <section class="bg-sky-950 flex-1 flex flex-col font-poiret text-white p-12 transition-all">
+  <section class="bg-sky-950 flex-1 flex flex-col font-poiret text-white p-12 transition-all hover:scale-90 cursor-pointer">
     <h1 class="text-5xl pb-8">
       CODE
     </h1>
@@ -43,7 +43,7 @@
       </button>
     </div>
   </section>
-  <section class="bg-slate-900 flex-1 flex flex-col font-poiret text-white p-12 transition-all">
+  <section class="bg-slate-900 flex-1 flex flex-col font-poiret text-white p-12 transition-all hover:scale-90 cursor-pointer">
     <h1 class="text-5xl pb-8">
       ABOUT
     </h1>

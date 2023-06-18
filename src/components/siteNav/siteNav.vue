@@ -5,22 +5,22 @@
     ref="navbarRef"
     class="w-full top-0 sticky bg-white transition-all"
   >
-    <nav class="h-20 max-w-7xl mx-auto flex justify-between items-center">
+    <nav class="h-16 max-w-7xl mx-auto flex justify-between items-center">
       <RouterLink
         class="one"
         to="/"
       >
-        <span class="font-poiret text-black text-2xl">HOME</span>
+        <span class="font-poiret text-black text-xl font-bold">HOME</span>
       </RouterLink>
       <div class="flex gap-12">
         <RouterLink
           class="two"
           to="/about"
         >
-          <span class="font-poiret text-black text-2xl">ABOUT</span>
+          <span class="font-poiret text-black text-xl font-bold">ABOUT</span>
         </RouterLink>
         <RouterLink to="/resume">
-          <span class="font-poiret text-black text-2xl">RESUME</span>
+          <span class="font-poiret text-black text-xl font-bold">RESUME</span>
         </RouterLink>
       </div>
     </nav>

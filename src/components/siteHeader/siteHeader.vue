@@ -7,13 +7,10 @@
         <h1 class="font-poiret text-7xl">
           Hi. I'm <span class="text-blue-500">Pelle</span>
         </h1>
-        <h2 class="font-poiret text-3xl">
-          I am a Web designer and frontend developer.
+        <h2 class="font-poiret text-xl font-bold pt-4 ">
+          I am a Web designer and Frontend developer. On this site, you can <br/> learn about me through this guided tour
         </h2>
-        <p>
-          This portfolio displays what i’ve learned so far. And for you reading this, knowing I want
-          to learn more.
-        </p>
+        
       </section>
 
       <img
@@ -23,7 +20,7 @@
       >
 
       <div class="flex items-end p-12">
-        <button class="bg-primary-600 py-4 px-16 text-white font-bold rounded-sm shadow-md">
+        <button  class="bg-primary-600 py-4 px-16 text-white font-bold rounded-sm shadow-md">
           Guided tour
         </button>
       </div>

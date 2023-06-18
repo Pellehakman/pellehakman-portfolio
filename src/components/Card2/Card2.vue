@@ -1,16 +1,18 @@
 <script src="./Card2.ts" lang="ts"></script>
 
 <template>
-  <div
-    ref="targetEl"
-
-    class="h-screen bg-black flex justify-center items-center snap-center overflow-y-hidden "
-  >
+    <div class="h-screen bg-white flex justify-center items-center snap-center ">
     <h1
 
-      class="snap-center text-white font-poiret text-7xl"
+      class="snap-center text-black font-poiret text-7xl"
     >
-      1 Nice. Let's fire this portfolio up!
+      2. Nice, Let's fire this portfolio up!
     </h1>
   </div>
 </template>
+
+
+<style>
+
+
+</style>
