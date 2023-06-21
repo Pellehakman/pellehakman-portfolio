@@ -1,29 +1,21 @@
 <script src="./siteHeader.ts" lang="ts"></script>
 
 <template>
-  <header class="bg-gradient-to-r from-neutral-300 to-neutral-400">
-    <div class="max-w-screen-xl mx-auto flex py-12">
-      <section class="text-black py-24">
-        <h1 class="font-poiret text-7xl">
-          Hi. I'm <span class="text-blue-500">Pelle</span>
+  <header class="h-screen">
+    <div class="max-w-6xl mx-auto flex h-[calc(100vh-80px)]">
+      <section class="py-24 text-white flex flex-col justify-center">
+        <h1 class="font-staatliches text-8xl">
+          Hi. My NAME IS <span class=" text-pink-700">Pelle</span>
         </h1>
-        <h2 class="font-poiret text-xl font-bold pt-4 ">
-          I am a Web designer and Frontend developer. On this site, you can <br/> learn about me through this guided tour
+        <h2 class=" text-xl font-sofia font-thin pt-4 pr-56 ">
+          I am a frontend developer and a web designer. I believe a good design comes from good research and a creative mind. Learning the users need and experience and giving them the product they need. <br> All desgins below are made by me.
         </h2>
-        
+        <div class="flex justify-end w-full pt-64">
+          <button class=" border-2 border-white py-4 px-16 text-white font-bold rounded-sm shadow-md">
+            Scroll down to learn more
+          </button>
+        </div>
       </section>
-
-      <img
-        class="ml-auto w-24"
-        :src="man"
-        alt=""
-      >
-
-      <div class="flex items-end p-12">
-        <button  class="bg-primary-600 py-4 px-16 text-white font-bold rounded-sm shadow-md">
-          Guided tour
-        </button>
-      </div>
     </div>
   </header>
 </template>

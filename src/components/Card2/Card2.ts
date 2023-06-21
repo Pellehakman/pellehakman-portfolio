@@ -1,7 +1,7 @@
 import { defineComponent, ref } from 'vue'
 import clicking from '@/assets/svg/clicking.svg'
-import lf from '@/assets/pictures/lf 1.svg'
-import hf from '@/assets/pictures/hf 1.svg'
+import leftPic from '@/assets/pictures/home-l.png'
+import rightPic from '@/assets/pictures/home-r.png'
 
 
 
@@ -11,8 +11,8 @@ export default defineComponent({
     return {
    
       clicking,
-      lf,
-      hf
+      leftPic,
+      rightPic
     }
   }
 })

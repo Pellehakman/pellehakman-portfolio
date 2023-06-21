@@ -5,7 +5,7 @@
     <div class="w-full h-1   ">
       <div
         id="myBar"
-        class="progress-bar bg-primary-600 h-1 "
+        class="progress-bar bg-pink-600 h-1 "
       />
     </div>
   </div>

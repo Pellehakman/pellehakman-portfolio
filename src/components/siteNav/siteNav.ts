@@ -14,7 +14,7 @@ export default defineComponent({
       if (prevScrollPos.value > currentScrollPos) {
         navbarRef.value.style.top = '0'
       } else {
-        navbarRef.value.style.top = '-64px'
+        navbarRef.value.style.top = '-80px'
       }
       prevScrollPos.value = currentScrollPos
     }

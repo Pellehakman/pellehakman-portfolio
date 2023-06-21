@@ -6,6 +6,9 @@ module.exports = {
 
   theme: {
     extend: {
+      transitionDuration: {
+        6000: '6000ms'
+      },
       lineHeight: {
         zero: '0'
       },
@@ -62,8 +65,9 @@ module.exports = {
       fontFamily: {
         francois: ['var(--ff-francois)'],
         roboto: ['var(--ff-roboto)'],
-        oranienbaum: ['var(--ff-oranienbaum)'],
-        poiret: ['var(--ff-poiret)']
+        sofia: ['var(--ff-sofia)'],
+        poiret: ['var(--ff-poiret)'],
+        staatliches: ['var(--ff-staatliches)']
       },
       backgroundImage: {
         pubg: "url('/src/assets/PUBG.jpeg')"

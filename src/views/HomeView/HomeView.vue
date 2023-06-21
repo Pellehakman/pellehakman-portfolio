@@ -3,11 +3,11 @@
 <template>
   <siteNav />
 
-  <div class="h-[calc(100vh-64px)] flex flex-col">
+  <div class="h-[calc(100vh-80px)] flex flex-col">
     <siteHeader />
-    <div class="flex h-full">
+    <!-- <div class="flex h-full">
       <smallCards />
-    </div>
+    </div> -->
   </div>
   <div class="">
     <Card2 class="" />

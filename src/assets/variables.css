@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Over+the+Rainbow&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@1;100;200;300;400;500;600;700;800;900;1000&family=Staatliches&display=swap');
+
+
 
 :root {
   --primary: #0f0d15;
-  --background: #e6e6e6;
+  --background: #0A0A0A;
   --secondary: rgb(11, 99, 150);
   --borderColor: rgb(0, 0, 0);
   --input: #1e1e1ec1;
@@ -24,7 +26,7 @@
   --danger-700: #9d3339;
   --danger-800: #842d35;
 
-  --black: #0c0d0c;
+  --black: #000000;
   --white: #ffffff;
   --gray: #606060;
 
@@ -35,10 +37,11 @@
 
   --ff-francois: 'Francois One', sans-serif;
   --ff-roboto: 'Roboto Condensed', sans-serif;
-  --ff-oranienbaum: 'Oranienbaum', serif;
+  --ff-sofia: 'Sofia Sans', sans-serif;
   --ff-poiret: 'Poiret One', cursive;
-}
+  --ff-staatliches: 'Staatliches', cursive;
 
+}
 * {
   margin: 0;
   padding: 0;
