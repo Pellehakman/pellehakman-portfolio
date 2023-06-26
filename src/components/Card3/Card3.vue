@@ -1,44 +1,45 @@
 <script src="./Card3.ts" lang="ts"></script>
 
 <template>
-  <div class="flex h-screen">
-    <div class="h-full w-1/4 flex items-end justify-center bg-slate-700">
-      <p class="h-96 w-96 bg-zinc-700">
-        text
-      </p>
-    </div>
-    <div class="h-full w-1/2  ">
-      <img
-      :src="shoe"
-        class="pic object-cover "
+  <div class="card3-container relative">
+    <div class="middle-container">
+      <p
+        v-motion-slide-visible-bottom
+        class="card3-text"
+        :delay="700"
       >
-    </div>
-    <div class="h-full w-1/4 flex items-end justify-center bg-slate-700">
-      <p class="h-96 w-96 bg-zinc-700">
-        text
+        Creating lofi wireframes that encapsulate your brand's essence, I prioritize your satisfaction before progressing to the hifi design phase.
+      </p>
+      <div
+        v-motion-slide-visible-top
+        :delay="400"
+      >
+        <img
+          class="w-[768px]"
+          :src="shoe"
+        >
+        <div class="bg-pink-700 opacity-80  w-96 h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl" />
+      </div>
+      <p
+        v-motion-slide-visible-bottom
+        class="card3-text"
+        :delay="600"
+      >
+        Embodying the essence of your brand, the resulting designs will leave a lasting impact on your users.
       </p>
     </div>
   </div>
-  <!-- <div
-    v-motion-fade-visible
-    class="h-screen flex justify-center items-center snap-center "
-  >
-    <img
-      class=""
-      :src="shoe"
-      alt=""
-    >
-  </div> -->
 </template>
 
 <style>
-/* .pic{
-  width: 100%;
-  height: 100%;
-  
-  background-size: 100%;
-  background-image: url('@/assets/pictures/shoe.png');
-  background-repeat: no-repeat;
-  background-position: center;
-} */
+.card3-container{
+  @apply flex h-screen  overflow-hidden
+}
+.middle-container{
+  @apply w-full flex justify-center items-center
+}
+.card3-text{
+  @apply h-full w-80 flex items-end text-white font-sofia text-xl pb-24
+}
+
 </style>

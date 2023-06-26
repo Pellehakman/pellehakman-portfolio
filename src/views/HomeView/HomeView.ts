@@ -7,9 +7,10 @@ import siteHero from '@/components/siteHero/siteHero.vue'
 import siteNav from '@/components/siteNav/siteNav.vue'
 import { defineComponent, onMounted } from 'vue'
 import progressBar from '@/components/progressBar/progressBar.vue'
+import Code from '@/components/Code/Code.vue'
 
 export default defineComponent({
-  components: { siteNav, siteHeader, siteHero, smallCards, Card2, Card3, progressBar },
+  components: { siteNav, siteHeader, siteHero, smallCards, Card2, Card3, Code, progressBar },
   setup() {
     function myFunction() {
       const winScroll = window.pageYOffset || document.documentElement.scrollTop;

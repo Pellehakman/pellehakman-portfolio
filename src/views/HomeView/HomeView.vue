@@ -9,13 +9,12 @@
       <smallCards />
     </div> -->
   </div>
- 
-    <Card2 class="" />
-    <!-- <Card3 class="" /> -->
-  
+
+  <Card2 class="" />
+  <Card3 class="" />
+  <Code class="" />
 </template>
 
 <style>
-
 
 </style>
