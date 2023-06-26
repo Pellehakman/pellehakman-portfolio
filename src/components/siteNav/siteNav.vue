@@ -7,7 +7,7 @@
   >
     <nav class="h-20 max-w-6xl mx-auto flex justify-between items-center relative ">
       <div class="flex flex-col">
-        <span class="font-sofia  text-xl font-extralight">Pelle Håkman</span>
+        <span class="font-sofia  text-base font-extralight">PELLE HÅKMAN</span>
         <span class="text-3xl">WEB DESIGNER & DEVELOPER</span>
       </div>
       <div class="flex gap-12">
