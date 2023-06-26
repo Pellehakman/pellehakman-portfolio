@@ -9,10 +9,10 @@
       <smallCards />
     </div> -->
   </div>
-  <div class="">
+ 
     <Card2 class="" />
-    <Card3 class="" />
-  </div>
+    <!-- <Card3 class="" /> -->
+  
 </template>
 
 <style>
