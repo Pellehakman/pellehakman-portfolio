@@ -13,6 +13,9 @@
   <Card2 class="" />
   <Card3 class="" />
   <Code class="" />
+  <DesignSystem />
+  <About />
+  <siteFooter />
 </template>
 
 <style>

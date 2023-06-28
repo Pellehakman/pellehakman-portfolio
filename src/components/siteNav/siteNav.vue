@@ -5,12 +5,12 @@
     ref="navbarRef"
     class="w-full top-0 sticky bg-black text-white transition-all overflow-hidden font-staatliches z-50"
   >
-    <nav class="h-20 max-w-6xl mx-auto flex justify-between items-center relative ">
+    <nav class="h-20 px-4  max-w-6xl mx-auto flex justify-between items-center relative ">
       <div class="flex flex-col">
         <span class="font-sofia  text-base font-extralight">PELLE HÅKMAN</span>
-        <span class="text-3xl">WEB DESIGNER & DEVELOPER</span>
+        <span class="text-3xl sm-max:text-lg ">WEB DESIGNER & DEVELOPER</span>
       </div>
-      <div class="flex gap-12">
+      <div class="flex gap-12 sm-max:gap-4">
         <RouterLink
           class="two"
           to="/"

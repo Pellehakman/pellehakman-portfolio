@@ -9,7 +9,7 @@ import DesignSystem from '../DesignSystem/DesignSystem.vue'
 
 export default defineComponent({
   name: 'Code',
-  components: { DesignSystem },
+  components: { DesignSystem, },
   setup() {
     const targetA = ref<HTMLElement>()
     const targetB = ref<HTMLElement>()

@@ -8,8 +8,8 @@ export const motionPhone1 = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 500,
-            duration: 600
+            delay: 400,
+            duration: 200
         }
     }
 }
@@ -19,12 +19,13 @@ export const motionPhone2 = {
         opacity: 0,
         y: -200,
     },
-    visible: {
+visible: {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 1000,
-            duration: 600
+            delay: 600,
+            duration: 200,
+            
         }
     }
 }
@@ -34,12 +35,12 @@ export const motionPhone3 = {
         opacity: 0,
         y: -200,
     },
-    visible: {
+   visible: {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 1500,
-            duration: 600
+            delay: 800,
+            duration: 200
         }
     },
     leave: {

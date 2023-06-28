@@ -8,9 +8,12 @@ import siteNav from '@/components/siteNav/siteNav.vue'
 import { defineComponent, onMounted } from 'vue'
 import progressBar from '@/components/progressBar/progressBar.vue'
 import Code from '@/components/Code/Code.vue'
+import DesignSystem from '@/components/DesignSystem/DesignSystem.vue'
+import About from '@/components/About/About.vue'
+import siteFooter from '@/components/siteFooter/siteFooter.vue'
 
 export default defineComponent({
-  components: { siteNav, siteHeader, siteHero, smallCards, Card2, Card3, Code, progressBar },
+  components: { siteNav, siteHeader, siteHero, smallCards, Card2, Card3, Code, progressBar, DesignSystem, About, siteFooter},
   setup() {
     function myFunction() {
       const winScroll = window.pageYOffset || document.documentElement.scrollTop;

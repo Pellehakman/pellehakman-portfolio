@@ -4,7 +4,7 @@
   <div class="card2-container">
     <div class="lr-container">
       <div
-        v-motion-slide-visible-left
+        v-motion-slide-visible-once-left
         :delay="300"
         class="l-container"
       >
@@ -15,12 +15,12 @@
           class="img-size"
           :src="leftPic"
         >
-        <div class="bg-yellow-200 opacity-10  w-96 h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl" />
+        <div class="bg-pink-500 opacity-20 rounded-full w-80 h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       </div>
     </div>
     <div class="lr-container">
       <div
-        v-motion-slide-visible-right
+        v-motion-slide-visible-once-right
         :delay="900"
         class="r-container"
       >
@@ -28,10 +28,11 @@
           class="img-size"
           :src="rightPic"
         >
-
-        <p class="pl-12 text-container">
-          A product that integrates both user experience and interface design.
-        </p>
+        <div class=" sm-max:bg-black sm-max:absolute sm-max:right-0 sm-max:w-56 sm-max:p-8 ">
+          <p class=" text-container text-left ">
+            A product that integrates both user experience and interface design.
+          </p>
+        </div>
         <div class="bg-teal-700 opacity-20  w-96 h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       </div>
     </div>
@@ -46,7 +47,7 @@
   @apply  h-full w-full relative flex items-center
 }
 .text-container{
-  @apply text-white font-sofia text-xl w-96
+  @apply text-white font-sofia text-xl sm-max:text-sm
 }
 .l-container{
   @apply absolute -right-10 flex items-center
@@ -55,7 +56,7 @@
   @apply absolute -left-10 pt-32 flex items-center
 }
 .img-size{
-  @apply h-[648px]
+  @apply h-[648px] sm-max:h-[450px]
 }
 .animate-spin {
     animation: spin 100s linear infinite;
