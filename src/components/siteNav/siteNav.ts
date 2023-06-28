@@ -1,10 +1,10 @@
-import { defineComponent, watch } from 'vue'
-import { ref, onMounted, onUnmounted } from 'vue'
+import { defineComponent } from 'vue'
+import { ref, onMounted } from 'vue'
 import progressBar from '../progressBar/progressBar.vue'
 
 export default defineComponent({
   name: 'SiteNav',
-  components: {progressBar},
+  components: { progressBar },
   setup() {
     const prevScrollPos = ref(window.pageYOffset)
     const navbarRef = ref<any>(null)

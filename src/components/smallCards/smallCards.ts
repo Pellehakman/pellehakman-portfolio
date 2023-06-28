@@ -1,6 +1,5 @@
 import { defineComponent, ref } from 'vue'
 
-
 export default defineComponent({
   name: 'smallCards',
   setup() {
@@ -11,7 +10,6 @@ export default defineComponent({
     }
 
     return {
-
       toNext,
       expand
     }

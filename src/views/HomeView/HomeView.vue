@@ -12,12 +12,10 @@
 
   <Card2 class="" />
   <Card3 class="" />
-  <Code class="" />
+  <SiteCode class="" />
   <DesignSystem />
   <About />
   <siteFooter />
 </template>
 
-<style>
-
-</style>
+<style></style>
