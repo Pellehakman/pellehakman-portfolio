@@ -1,22 +1,38 @@
 <script src="./Card2.ts" lang="ts"></script>
 
 <template>
-  <div class="card2-container">
+  <div class="card2-container bg-slate-900 bg-opacity-20">
     <div class="lr-container">
+      <p
+        v-motion-slide-visible-once-left
+        class=" absolute top-32 left-0 w-screen px-12  text-center font-sofia text-white  "
+        :delay="300"
+      >
+        Learning the user needs and desires. <br> I deliver a tailored product experience.
+      </p>
       <div
         v-motion-slide-visible-once-left
         :delay="300"
         class="l-container"
       >
-        <p class="pr-12 text-container">
-          Learning the user needs and desires, I deliver a tailored product experience.
-        </p>
+        <div class="flex justify-center items text-center w-96 p-12 sm-max:hidden">
+          <p class=" text-container text-right ">
+            Learning the user needs and desires, I deliver a tailored product experience.
+          </p>
+        </div>
         <img
           class="img-size"
           :src="leftPic"
         >
         <div class="bg-pink-500 opacity-20 rounded-full w-80 h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       </div>
+      <p
+        v-motion-slide-visible-once-right
+        class=" absolute bottom-16 left-0 w-screen px-12   text-center font-sofia text-white "
+        :delay="900"
+      >
+        A product that integrates both user experience and interface design.
+      </p>
     </div>
     <div class="lr-container">
       <div
@@ -28,11 +44,12 @@
           class="img-size"
           :src="rightPic"
         >
-        <div class=" sm-max:bg-black sm-max:absolute sm-max:right-0 sm-max:w-56 sm-max:p-8 ">
-          <p class=" text-container text-left ">
+        <div class="flex  justify-center items text-center w-96 p-12 sm-max:hidden">
+          <p class=" text-container text-left   ">
             A product that integrates both user experience and interface design.
           </p>
         </div>
+
         <div class="bg-teal-700 opacity-20  w-96 h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       </div>
     </div>
