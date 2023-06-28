@@ -5,7 +5,7 @@
     <div class="lr-container">
       <p
         v-motion-slide-visible-once-left
-        class="absolute top-32 left-0 w-screen px-12 text-center font-sofia text-white"
+        class="absolute top-32 left-0 w-screen px-12 text-center font-sofia text-white bg-opacity-50 bg-slate-950 z-50 py-2"
         :delay="300"
       >
         Learning the user needs and desires. <br />
@@ -24,7 +24,7 @@
       </div>
       <p
         v-motion-slide-visible-once-right
-        class="absolute bottom-16 left-0 w-screen px-12 text-center font-sofia text-white"
+        class="absolute bottom-16 left-0 w-screen px-12 text-center font-sofia text-white bg-opacity-50 bg-slate-950 z-50 py-2"
         :delay="900"
       >
         A product that integrates both user experience and interface design.
