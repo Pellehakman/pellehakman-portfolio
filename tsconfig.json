@@ -7,7 +7,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "noImplicitAny": false,
+    "allowJs": true,
+    "strict": true,
   },
 
   "references": [
@@ -15,4 +18,5 @@
       "path": "./tsconfig.node.json"
     }
   ]
+  
 }
