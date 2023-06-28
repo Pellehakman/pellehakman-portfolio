@@ -15,7 +15,7 @@
     <div class="px-24 flex justify-center items-center">
       <img
         class="absolute scale-75"
-        :src="undraw_love_it"
+
         alt=""
       >
     </div>

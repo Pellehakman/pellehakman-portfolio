@@ -1,5 +1,5 @@
 import { defineComponent, ref } from 'vue'
-import clicking from '@/assets/svg/clicking.svg'
+
 
 export default defineComponent({
   name: 'smallCards',
@@ -11,7 +11,7 @@ export default defineComponent({
     }
 
     return {
-      clicking,
+
       toNext,
       expand
     }
