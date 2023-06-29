@@ -18,7 +18,7 @@
           <img
             src="@/assets/pictures/1.png"
             alt="Image 1"
-            class="w-[800px] h-auto object-cover drop-shadow-2xl"
+            class="h-full object-cover max-w-[800px] sm-max:h-3/4 drop-shadow-2x"
           />
         </div>
 
@@ -26,7 +26,7 @@
           <img
             src="@/assets/pictures/2.png"
             alt="Image 2"
-            class="w-[800px] h-auto object-cover drop-shadow-2xl"
+            class="h-full object-cover max-w-[800px] sm-max:h-3/4 drop-shadow-2x"
           />
         </div>
 
@@ -34,15 +34,22 @@
           <img
             src="@/assets/pictures/3.png"
             alt="Image 3"
-            class="w-[800px] h-auto object-cover drop-shadow-2xl"
+            class="h-full object-cover max-w-[800px] sm-max:h-3/4 drop-shadow-2x"
           />
         </div>
 
-        <div
-          class="absolute top-0 w-1/3 h-full overflow-y-scroll right-0 z-40 sm-max:w-3/4 rounded-l-lg drop-shadow-2xl"
-        >
+        <div class="absolute top-0 w-1/3 h-full right-0 z-40 sm-max:w-3/4 drop-shadow-2xl">
+          <div
+            class="w-full bg-pink-800 h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-white"
+          >
+            <h3>code example</h3>
+            <button @click="close" class="rounded-full p-4 flex justify-center items-center">
+              <font-awesome-icon class="flex items-center" icon="fa-solid fa-xmark" />
+            </button>
+          </div>
           <pre
-            class="text-white p-8 bg-stone-950"
+            :class="{ 'opacity-0': isClosed }"
+            class="text-white p-8 overflow-y-scroll h-full bg-stone-950 transition-all"
           ><code class="text-xs ">import { defineComponent, onMounted, ref } from 'vue'
 import pic from '@/assets/pic.png'
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -126,7 +133,14 @@ export default defineComponent({
     </div>
   </div>
 </template>
-
+<!-- <div
+            class="w-full bg-pink-800 h-12 flex justify-between items-center pl-4 font-sofia text-white"
+          >
+            <h3>code example</h3>
+            <button class="rounded-full p-4 flex justify-center items-center">
+              <font-awesome-icon class="flex items-center" icon="fa-solid fa-xmark" />
+            </button>
+          </div> -->
 <style>
 .hej {
   @apply h-[1024px] relative flex justify-center items-center;
