@@ -1,34 +1,49 @@
 <script src="./SiteCode.ts" lang="ts"></script>
 
 <template>
-  <div class="code-container relative items-center mx-auto flex flex-col bak1">
-    <div class="">
-      <section class="pt-24 pb-12 text-black flex flex-col justify-center w-full">
-        <h1 class="font-staatliches text-8xl">CODE & <span class="text-white">DEVELOP</span></h1>
-        <h2 class="text-xl font-sofia font-bold pt-4">
+  <div class="code-container bak1">
+    <div class="max-w-6xl mx-auto flex flex-col sm-max:py-8 py-12 pt-24 relative">
+      <section class="text-white flex flex-col justify-start relative">
+        <h1 class="font-staatliches text-8xl sm-max:text-5xl text-black px-4">
+          CODE & <span class="text-white">DEVELOP</span>
+        </h1>
+
+        <h2 class="text-xl font-sofia font-thin py-4 sm-max:text-base px-4">
           Keywords in programming for me is, VUE 3 composition api, REACT, Firebase, auth, pinia.
           Tailwind, scss, css. Eslint, prettier, clean code.
         </h2>
       </section>
-      <div class="max-w-6xl p-12 flex">
-        <div class="w-full flex justify-start overflow-hidden relative">
-          <div ref="targetA" v-motion="motionPhone1" class="absolute drop-shadow-2xl">
-            <img class="w-[640px]" :src="a" />
-          </div>
-          <div ref="targetB" v-motion="motionPhone2" class="absolute drop-shadow-2xl">
-            <img class="w-[640px]" :src="b" />
-          </div>
-          <div v-motion="motionPhone3" class="absolute drop-shadow-2xl">
-            <img class="w-[640px]" :src="c" />
-          </div>
+      <div class="hej">
+        <div class="absolute inset-0">
+          <img
+            src="@/assets/pictures/1.png"
+            alt="Image 1"
+            class="w-[800px] h-auto object-cover drop-shadow-2xl"
+          />
         </div>
-        <div class="flex">
-          <div
-            class="scroll-smooth shadow-2xl bg-stone-950 w-full ml-12 h-[768px] rounded-l-xl overflow-y-scroll break-words p-8"
-          >
-            <pre class="text-white text-xs">
-            <code>
-import { defineComponent, onMounted, ref } from 'vue'
+
+        <div class="absolute inset-0">
+          <img
+            src="@/assets/pictures/2.png"
+            alt="Image 2"
+            class="w-[800px] h-auto object-cover drop-shadow-2xl"
+          />
+        </div>
+
+        <div class="absolute inset-0">
+          <img
+            src="@/assets/pictures/3.png"
+            alt="Image 3"
+            class="w-[800px] h-auto object-cover drop-shadow-2xl"
+          />
+        </div>
+
+        <div
+          class="absolute top-0 w-1/3 h-full overflow-y-scroll right-0 z-40 sm-max:w-3/4 rounded-l-lg drop-shadow-2xl"
+        >
+          <pre
+            class="text-white p-8 bg-stone-950"
+          ><code class="text-xs ">import { defineComponent, onMounted, ref } from 'vue'
 import pic from '@/assets/pic.png'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import doubleChevronDown from '@/assets/doubleChevronDown.svg'
@@ -52,18 +67,21 @@ export default defineComponent({
     onMounted(async () => {
       $edamam.SearchRecipes()
       const data = await $firebaseService.getRecipes()
+      // recipes.value = $helperRandom.shuffle(data.recipes)
       recipes.value = $helperResults.result(
         $helperFilter.diet($helperFilter.allergies(data.recipes))
       )
-
+      // recipes.value = $helperFilter.allergies(data.recipes)
     })
     const show = ref(false)
+
     const recipes = ref()
 
     let swiperRef: SwiperClass | null = null
     const setSwiperRef = (swiper: SwiperClass) => {
       swiperRef = swiper
     }
+
     const clickSwipe = () => {
       swiperRef?.slideNext()
     }
@@ -95,14 +113,14 @@ export default defineComponent({
       pic,
       readMore,
       handleRecipe,
+
       emitClose
     }
   }
 })
 
-            </code>
-          </pre>
-          </div>
+        </code>
+      </pre>
         </div>
       </div>
     </div>
@@ -110,8 +128,49 @@ export default defineComponent({
 </template>
 
 <style>
+.hej {
+  @apply h-[1024px] relative flex justify-center items-center;
+}
+.b1 {
+  background-image: url('@/assets/pictures/1.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+
+  z-index: 1; /* Adjust the z-index to control the overlapping */
+}
+
+.b2 {
+  background-image: url('@/assets/pictures/2.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+
+  z-index: 2; /* Adjust the z-index to control the overlapping */
+}
+
+.b3 {
+  background-image: url('@/assets/pictures/3.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+
+  z-index: 3; /* Adjust the z-index to control the overlapping */
+}
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+.code-container {
+  @apply relative flex flex-col min-h-screen;
+}
+
 .bak1 {
-  background: linear-gradient(to bottom, #c74b2e 80%, #fffaf2 50%);
+  background: linear-gradient(to bottom, #c74b2e 70%, #fffaf2 30%);
+  /* background: #c74b2e; */
 }
 .animateIn {
   @apply transition-all duration-1000 translate-x-0 opacity-100;
@@ -125,13 +184,11 @@ export default defineComponent({
 .c {
   @apply delay-1000  duration-1000;
 }
-.code-container {
-  @apply flex h-full w-full bg-[#C74B2E]  overflow-hidden;
-}
+
 /* .middleCode-container{
   @apply 
 } */
-.card3-text {
+.code-text {
   @apply h-full w-80 flex items-end text-white font-sofia text-xl pb-24;
 }
 </style>

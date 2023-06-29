@@ -2,14 +2,10 @@
 
 <template>
   <siteNav />
-
-  <div class="h-[calc(100vh-80px)] flex flex-col">
-    <siteHeader />
-  </div>
-
-  <Card2 class="" />
-  <Card3 class="" />
-  <SiteCode class="" />
+  <siteHeader />
+  <Card2 />
+  <Card3 />
+  <SiteCode />
   <DesignSystem />
   <About />
   <siteFooter />

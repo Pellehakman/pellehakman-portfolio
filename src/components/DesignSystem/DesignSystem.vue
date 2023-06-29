@@ -2,7 +2,7 @@
 
 <template>
   <div class="design-container relative flex flex-col">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-6xl mx-auto py-24 sm-max:py-8 px-4">
       <section class="pb-12 text-black flex flex-col justify-center w-full">
         <h1 class="font-staatliches text-8xl">DESIGN SYSTEM</h1>
         <h2 class="text-xl font-sofia font-bold pt-4">
@@ -50,6 +50,6 @@
 
 <style>
 .design-container {
-  @apply flex h-screen bg-[#fffaf2]  overflow-hidden;
+  @apply h-full bg-[#fffaf2];
 }
 </style>

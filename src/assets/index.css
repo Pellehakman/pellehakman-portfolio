@@ -24,10 +24,10 @@
 
 @layer base {
   body {
-    @apply  bg-background h-full w-full transition-all;
+    @apply  bg-background h-full w-full transition-all ;
   }
   #app {
-    @apply h-full w-full transition-all ;
+    @apply h-full w-full transition-all flex flex-col ;
   }
 }
 

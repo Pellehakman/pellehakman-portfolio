@@ -57,7 +57,7 @@
   @apply text-white font-sofia text-xl sm-max:text-sm;
 }
 .card2-text {
-  @apply text-white h-[10%] flex items-center justify-center text-center font-extralight font-sofia px-4;
+  @apply text-white h-[10%] flex items-center justify-center text-center font-extralight font-sofia px-4 sm:hidden;
 }
 .l-container {
   @apply absolute -right-10 flex items-center;
