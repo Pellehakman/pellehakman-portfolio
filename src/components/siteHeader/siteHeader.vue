@@ -2,9 +2,9 @@
 
 <template>
   <header class="h-[calc(100vh-80px)] flex flex-col">
-    <div class="max-w-6xl mx-auto flex h-[calc(100vh-80px)] sm-max:py-8 py-24 px-4">
+    <div class="max-w-6xl mx-auto flex h-[calc(100dvh-80px)] sm-max:py-8 py-24 px-4 sm-max:px-8">
       <section class="text-white flex flex-col justify-start">
-        <h1 class="font-staatliches text-8xl sm-max:text-5xl">
+        <h1 class="font-staatliches text-8xl sm-max:text-8xl">
           Hi. My NAME IS <span class="text-pink-700">Pelle</span>
         </h1>
         <h2 class="text-xl font-sofia font-thin pt-4">

@@ -4,52 +4,57 @@
   <div class="code-container bak1">
     <div class="max-w-6xl mx-auto flex flex-col sm-max:py-8 py-12 pt-24 relative">
       <section class="text-white flex flex-col justify-start relative">
-        <h1 class="font-staatliches text-8xl sm-max:text-5xl text-black px-4">
+        <h1 class="font-staatliches text-8xl sm-max:text-5xl text-black sm-max:px-8 px-4">
           CODE & <span class="text-white">DEVELOP</span>
         </h1>
 
-        <h2 class="text-xl font-sofia font-thin py-4 sm-max:text-base px-4">
+        <h2 class="text-xl font-sofia font-thin py-4 sm-max:text-base sm-max:px-8 px-4">
           Keywords in programming for me is, VUE 3 composition api, REACT, Firebase, auth, pinia.
           Tailwind, scss, css. Eslint, prettier, clean code.
         </h2>
       </section>
       <div class="hej">
-        <div class="absolute inset-0">
+        <div class="absolute inset-0 overflow-x-hidden">
           <img
             src="@/assets/pictures/1.png"
             alt="Image 1"
-            class="h-full object-cover max-w-[800px] sm-max:h-3/4 drop-shadow-2x"
+            class="a h-full object-cover w-full sm-max:h-3/4 drop-shadow-2x"
           />
         </div>
 
-        <div class="absolute inset-0">
+        <div class="absolute inset-0 overflow-x-hidden">
           <img
             src="@/assets/pictures/2.png"
             alt="Image 2"
-            class="h-full object-cover max-w-[800px] sm-max:h-3/4 drop-shadow-2x"
+            class="b h-full object-cover w-full sm-max:h-3/4 drop-shadow-2x"
           />
         </div>
 
-        <div class="absolute inset-0">
+        <div class="absolute inset-0 overflow-x-hidden">
           <img
             src="@/assets/pictures/3.png"
             alt="Image 3"
-            class="h-full object-cover max-w-[800px] sm-max:h-3/4 drop-shadow-2x"
+            class="c h-full object-cover w-full sm-max:h-3/4 drop-shadow-2x"
           />
         </div>
 
-        <div class="absolute top-0 w-1/3 h-full right-0 z-40 sm-max:w-3/4 drop-shadow-2xl">
+        <div class="absolute mt-12 top-0 w-1/3 h-full right-0 z-40 sm-max:w-3/4">
           <div
             class="w-full bg-pink-800 h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-white"
           >
             <h3>code example</h3>
             <button @click="close" class="rounded-full p-4 flex justify-center items-center">
-              <font-awesome-icon class="flex items-center" icon="fa-solid fa-xmark" />
+              <font-awesome-icon
+                v-if="!isClosed"
+                class="flex items-center"
+                icon="fa-solid fa-xmark"
+              />
+              <font-awesome-icon v-if="isClosed" class="" icon="fa-solid fa-expand" />
             </button>
           </div>
           <pre
-            :class="{ 'opacity-0': isClosed }"
-            class="text-white p-8 overflow-y-scroll h-full bg-stone-950 transition-all"
+            :class="{ 'opacity-0 hidden': isClosed }"
+            class="text-white p-8 overflow-y-scroll h-full rounded-bl-lg bg-stone-900 transition-all shadow-2xl"
           ><code class="text-xs ">import { defineComponent, onMounted, ref } from 'vue'
 import pic from '@/assets/pic.png'
 import { Swiper, SwiperSlide } from 'swiper/vue'
@@ -143,34 +148,9 @@ export default defineComponent({
           </div> -->
 <style>
 .hej {
-  @apply h-[1024px] relative flex justify-center items-center overflow-x-hidden;
-}
-.b1 {
-  background-image: url('@/assets/pictures/1.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 800px auto;
-
-  z-index: 1; /* Adjust the z-index to control the overlapping */
+  @apply h-[1024px] relative flex justify-center items-center;
 }
 
-.b2 {
-  background-image: url('@/assets/pictures/2.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 800px auto;
-
-  z-index: 2; /* Adjust the z-index to control the overlapping */
-}
-
-.b3 {
-  background-image: url('@/assets/pictures/3.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 800px auto;
-
-  z-index: 3; /* Adjust the z-index to control the overlapping */
-}
 pre {
   white-space: pre-wrap; /* Since CSS 2.1 */
   white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
@@ -183,20 +163,20 @@ pre {
 }
 
 .bak1 {
-  background: linear-gradient(to bottom, #c74b2e 70%, #fffaf2 30%);
-  /* background: #c74b2e; */
+  background: linear-gradient(to bottom, #c74b2e 90%, #fffaf2 10%);
+  background: #c74b2e;
 }
 .animateIn {
   @apply transition-all duration-1000 translate-x-0 opacity-100;
 }
 .a {
-  @apply duration-1000;
+  background-position: center;
 }
 .b {
-  @apply delay-500 duration-1000;
+  background-position: center;
 }
 .c {
-  @apply delay-1000  duration-1000;
+  background-position: center;
 }
 
 /* .middleCode-container{
