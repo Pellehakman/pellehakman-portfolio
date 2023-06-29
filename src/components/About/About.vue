@@ -32,14 +32,14 @@
               Additional information & downloads
             </h3>
             <div class="flex pt-8 mx-8 flex-col">
-              <div class="flex items-center gap-4 ">
+              <div class="flex items-center gap-4">
                 <a
-                  class="py-3 sm-max:text-xs px-8 border-2 border-white"
+                  class="py-3 sm-max:text-xs px-8 border-2 border-white whitespace-nowrap"
                   href="mailto: perhakman@outlook.com"
                   >Send Email</a
                 >
                 <a
-                  class="py-3 sm-max:text-xs px-8 border-2 border-white"
+                  class="py-3 sm-max:text-xs px-8 border-2 border-white whitespace-nowrap"
                   href="https://dl.dropboxusercontent.com/s/b8otlf67sp5q29p/Pelle%20H%C3%A5kman.pdf?dl=0"
                   download
                   >Download resume (CV)</a

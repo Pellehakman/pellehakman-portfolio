@@ -7,13 +7,13 @@
         <h1 class="font-staatliches text-8xl sm-max:text-8xl">
           Hi. My NAME IS <span class="text-pink-700">Pelle</span>
         </h1>
-        <h2 class="text-base font-sofia font-thin ">
+        <h2 class="text-base font-sofia font-thin">
           I am a frontend developer and a web designer. I believe a good design comes from good
           research and a creative mind. Learning the users need and experience and giving them the
           product they need. All desgins below are made by me.
         </h2>
         <div class="flex justify-end w-full sm-max:justify-center h-full sm-max:items-end">
-          <div class="text-white font-bold rounded-sm shadow-md  mx-4">
+          <div class="text-white font-bold rounded-sm shadow-md mx-4">
             Scroll down to learn more
           </div>
         </div>
