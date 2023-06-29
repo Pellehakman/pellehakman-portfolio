@@ -143,7 +143,7 @@ export default defineComponent({
           </div> -->
 <style>
 .hej {
-  @apply h-[1024px] relative flex justify-center items-center;
+  @apply h-[1024px] relative flex justify-center items-center overflow-x-hidden;
 }
 .b1 {
   background-image: url('@/assets/pictures/1.png');
