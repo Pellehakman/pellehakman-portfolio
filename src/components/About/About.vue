@@ -28,18 +28,18 @@
         </h2>
         <div class="w-full flex">
           <div class="w-full">
-            <h3 class="font-staatliches text-8xl sm-max:text-3xl text-white sm-max:px-8 px-4">
+            <h3 class="font-staatliches mt-12 text-5xl sm-max:text-3xl text-white sm-max:px-8 px-4">
               Additional information & downloads
             </h3>
             <div class="flex pt-8 mx-8 flex-col">
-              <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4 ">
                 <a
-                  class="py-3 sm-max:text-xs px-12 border-2 border-white"
+                  class="py-3 sm-max:text-xs px-8 border-2 border-white"
                   href="mailto: perhakman@outlook.com"
                   >Send Email</a
                 >
                 <a
-                  class="py-3 sm-max:text-xs px-12 border-2 border-white"
+                  class="py-3 sm-max:text-xs px-8 border-2 border-white"
                   href="https://dl.dropboxusercontent.com/s/b8otlf67sp5q29p/Pelle%20H%C3%A5kman.pdf?dl=0"
                   download
                   >Download resume (CV)</a

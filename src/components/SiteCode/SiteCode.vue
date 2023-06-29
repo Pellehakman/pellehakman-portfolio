@@ -38,11 +38,15 @@
           />
         </div>
 
-        <div class="absolute mt-12 top-0 w-1/3 h-full right-0 z-40 sm-max:w-3/4">
+        <div
+          :class="{ 'right-0 absolute': isClosed }"
+          class="absolute mt-12 top-0 w-1/3 h-full right-0 z-40 sm-max:w-3/4 mr-4"
+        >
           <div
-            class="w-full bg-pink-800 h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-white"
+            :class="{ 'right-0 absolute pl-0 rounded-md': isClosed }"
+            class="bg-pink-900 h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-white"
           >
-            <h3>code example</h3>
+            <h3 v-if="!isClosed">code example</h3>
             <button @click="close" class="rounded-full p-4 flex justify-center items-center">
               <font-awesome-icon
                 v-if="!isClosed"

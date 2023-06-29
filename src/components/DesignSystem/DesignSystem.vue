@@ -2,7 +2,7 @@
 
 <template>
   <div class="design-container relative flex flex-col">
-    <div class="max-w-6xl mx-auto py-24  px-4">
+    <div class="max-w-6xl mx-auto py-24 px-4">
       <section class="pb-12 text-black flex flex-col justify-center w-full">
         <h1 class="font-staatliches text-8xl sm-max:text-5xl text-black sm-max:px-8 px-4">
           DESIGN SYSTEM
