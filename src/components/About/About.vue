@@ -5,13 +5,12 @@
     <div class="max-w-6xl mx-auto font-sofia text-white">
       <div class="flex flex-col justify-end items-end">
         <img :src="juno" alt="" />
-        <label class="italic text-xs pr-8"> Roland Juno-60 </label>
       </div>
       <section class="pt-12 sm-max:pt-4 flex flex-col justify-center w-full">
         <h1 class="font-staatliches text-8xl sm-max:text-5xl text-white sm-max:px-8 px-4">
           About me
         </h1>
-        <h2 class="font-sofia font-regular text-lg py-4 sm-max:text-base sm-max:px-8 px-4">
+        <h2 class="font-sofia font-normal text-lg py-4 sm-max:text-base sm-max:px-8 px-4">
           Prior to pursuing web development, I spent many years working in the music industry.
           Alongside my brother, I run a recording studio called Upriver Recording Studio. Through
           this experience, I have had the opportunity to interact with a diverse range of people.

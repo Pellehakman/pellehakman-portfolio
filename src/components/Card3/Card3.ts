@@ -1,12 +1,12 @@
 import { defineComponent } from 'vue'
 
-import shoe from '@/assets/pictures/shoe.png'
+import lr2 from '@/assets/pictures/lr2.png'
 
 export default defineComponent({
   name: 'Hero',
   setup() {
     return {
-      shoe
+      lr2
     }
   }
 })

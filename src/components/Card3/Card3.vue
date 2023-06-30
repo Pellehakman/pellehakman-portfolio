@@ -1,48 +1,81 @@
 <script src="./Card3.ts" lang="ts"></script>
 
 <template>
-  <div class="card3-container relative">
-    <div class="middle-container">
-      <div class="flex items-center">
-        <p v-motion-slide-visible-once-bottom class="card3-text" :delay="700">
-          Creating lofi wireframes that encapsulate your brand's essence, I prioritize your
-          satisfaction before progressing to the hifi design phase.
-        </p>
-
-        <div class="h-full flex items-center" v-motion-slide-visible-once-top :delay="400">
-          <img class="w-[768px]" :src="shoe" />
-          <div
-            class="bg-pink-700 opacity-30 w-96 h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
-          ></div>
+  <div class="card2-container py-12">
+    <div class="card2-text" v-motion-slide-visible-once-left :delay="300">
+      <p>
+        <span class="font-black">Creating lofi wireframes</span> that encapsulate your brand's
+        essence, I prioritize your satisfaction before progressing to the
+        <span class="font-black">hifi design phase</span>.
+      </p>
+    </div>
+    <div class="flex py-12">
+      <div class="lr-container">
+        <div v-motion-slide-visible-once-left :delay="300" class="l-container">
+          <div class="flex justify-center text-center w-96 p-12 lg-max:hidden">
+            <p class="text-container text-right">
+              Creating lofi wireframes that encapsulate your brand's essence, I prioritize your
+              satisfaction before progressing to the hifi design phase.
+            </p>
+          </div>
         </div>
-
-        <p v-motion-slide-visible-once-bottom class="card3-text" :delay="600">
-          Embodying the essence of your brand, the resulting designs will leave a lasting impact on
-          your users.
-        </p>
       </div>
-      <div class="card3b-text">
-        <p>
-          Creating lofi wireframes that encapsulate your brand's essence, I prioritize your
-          satisfaction before progressing to the hifi design phase. Embodying the essence of your
-          brand, the resulting designs will leave a lasting impact on your users.
-        </p>
+      <div v-motion-fade-visible-once :delay="900">
+        <div
+          class="bg-pink-500 animate-pulse opacity-50 rounded-full w-64 h-64 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
+        ></div>
+        <img class="hover:scale-105 transition-all duration-6000" :src="lr2" alt="" />
       </div>
+      <div class="lr-container">
+        <div v-motion-slide-visible-once-right :delay="900" class="r-container">
+          <div class="flex justify-center items-center text-center w-96 p-12 lg-max:hidden">
+            <p class="text-container text-left">
+              Embodying the essence of your brand, the resulting designs will leave a lasting impact
+              on your users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card2-text" v-motion-slide-visible-once-right :delay="100">
+      <p class="">
+        Embodying the essence of <span class="font-black">your brand</span>, the resulting designs
+        will leave a <span class="font-black">lasting impact</span> on your users.
+      </p>
     </div>
   </div>
 </template>
 
 <style>
-.card3-container {
-  @apply flex h-screen flex-col;
+.card2-container {
+  @apply flex flex-col justify-center min-h-screen;
 }
-.card3b-text {
-  @apply text-white sm-max:px-8  mt-12 flex items-center justify-center text-center font-extralight font-sofia sm:hidden px-4;
+.lr-container {
+  @apply w-full flex items-center relative;
 }
-.middle-container {
-  @apply w-full h-full flex justify-center items-center flex-col overflow-x-hidden;
+.text-container {
+  @apply text-white font-sofia text-xl;
 }
-.card3-text {
-  @apply h-full w-80 flex sm-max:hidden items-end text-white font-sofia text-xl  px-4;
+.card2-text {
+  @apply text-white h-16 flex items-center justify-center text-center font-extralight font-sofia px-4  sm-max:px-8 lg:hidden;
+}
+.l-container {
+  @apply flex-grow flex items-center justify-end;
+}
+.r-container {
+  @apply flex-grow flex items-center justify-start;
+}
+.img-size {
+  @apply max-h-[80vh] sm-max:h-[450px];
+}
+.animate-spin {
+  animation: spin 100s linear infinite;
 }
 </style>
+
+<!-- .l-container {
+  @apply absolute -right-10 flex items-center;
+}
+.r-container {
+  @apply absolute -left-10  flex items-center;
+} -->

@@ -49,4 +49,10 @@
 }
 
 @layer components {
+  .h2-standard {
+    @apply text-base font-sofia font-normal
+  }
+  .info-standard {
+    @apply text-base font-sofia font-regular
+  }
 }

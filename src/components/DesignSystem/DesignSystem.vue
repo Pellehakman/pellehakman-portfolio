@@ -7,7 +7,7 @@
         <h1 class="font-staatliches text-8xl sm-max:text-5xl text-black sm-max:px-8 px-4">
           DESIGN SYSTEM
         </h1>
-        <h2 class="text-xl font-sofia font-light py-4 sm-max:text-base sm-max:px-8 px-4">
+        <h2 class="h2-standard sm-max:px-8 px-4">
           Working along side a design system is key to having a design that stays consistent and
           readable towards developers and customers. From figma to zero height.
         </h2>

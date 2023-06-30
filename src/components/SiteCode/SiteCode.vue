@@ -47,9 +47,9 @@
         >
           <div
             :class="{ 'right-0 absolute pl-0 rounded-md': isClosed }"
-            class="bg-[#c74b2e] hover:bg-[#a8452f]  h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-white"
+            class="bg-[#c74b2e] hover:bg-[#a8452f] h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-base text-white"
           >
-            <h3 v-if="!isClosed">code example</h3>
+            <h3 v-if="!isClosed">"Pantry App" code example</h3>
             <button
               @click="close"
               :class="{ 'pl-0': isClosed }"

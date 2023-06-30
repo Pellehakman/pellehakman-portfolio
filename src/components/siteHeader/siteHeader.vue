@@ -7,7 +7,7 @@
         <h1 class="font-staatliches text-8xl sm-max:text-8xl">
           Hi. My NAME IS <span class="text-pink-700">Pelle</span>
         </h1>
-        <h2 class="text-base font-sofia font-thin">
+        <h2 class="h2-standard">
           I am a frontend developer and a web designer. I believe a good design comes from good
           research and a creative mind. Learning the users need and experience and giving them the
           product they need. All desgins below are made by me.
