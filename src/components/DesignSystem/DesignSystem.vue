@@ -26,7 +26,8 @@
         <div class="w-full">
           <div class="flex w-full justify-end sm-max:justify-center">
             <button
-              class="bg-blue-300 rounded-md shadow-lg px-12 py-3 font-sofia font-bold text-white"
+              @click="openOverlay"
+              class="btn-style bg-blue-400 hover:bg-blue-300 active:bg-blue-500"
             >
               Take me there
             </button>
@@ -48,7 +49,8 @@
         <div class="w-full">
           <div class="flex w-full justify-end sm-max:justify-center">
             <button
-              class="bg-pink-500 rounded-md shadow-lg px-12 py-3 font-sofia font-bold text-white"
+              @click="openOverlay"
+              class="btn-style bg-pink-500 hover:bg-pink-400 active:bg-pink-600"
             >
               Take me there
             </button>
@@ -56,10 +58,36 @@
         </div>
       </section>
     </div>
+
+    <div class="overlay select-none" v-if="showOverlay">
+      <div class="overlay-content flex items-center justify-center h-full relative">
+        <font-awesome-icon
+          @click="closeOverlay"
+          class="text-black absolute right-0 top-0 p-4 cursor-pointer"
+          icon="fa-solid fa-xmark"
+        />
+        <p class="message text-black text-xl font-sofia">Sorry, the link is not active yet.</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <style>
+.btn-style {
+  @apply text-white font-sofia py-4 px-6 rounded-md sm-max:text-base border-2 border-white active:border-stone-300;
+}
+.design-container {
+  position: relative;
+}
+
+.overlay {
+  @apply flex items-center justify-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-full h-full bg-stone-950 bg-opacity-40;
+}
+
+.overlay-content {
+  @apply bg-white sm-max:w-[90%]  w-1/2 h-1/4;
+}
+
 .design-container {
   @apply h-full bg-[#fffaf2];
 }

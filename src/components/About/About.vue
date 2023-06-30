@@ -60,11 +60,11 @@
 
 <style>
 .btn-style-shell {
-  @apply text-white font-sofia py-3 sm-max:text-xs px-8 border-2 border-white hover:bg-white hover:text-black active:bg-stone-300 active:border-stone-300;
+  @apply text-white font-sofia py-4 rounded-md sm-max:text-base px-6 border-2 border-white hover:bg-white hover:text-black active:bg-stone-300 active:border-stone-300;
 }
 
 .btn-style-fill {
-  @apply text-black font-sofia py-3 sm-max:text-xs px-8 border-2 border-black bg-white hover:bg-black hover:text-white active:bg-stone-300 active:bg-transparent;
+  @apply text-black font-sofia py-4 rounded-md sm-max:text-base px-8 border-2 border-black bg-white hover:bg-black hover:text-white active:bg-stone-300 active:bg-transparent;
 }
 .about-container {
   @apply flex min-h-screen bg-black overflow-hidden;
