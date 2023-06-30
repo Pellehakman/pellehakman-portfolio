@@ -12,7 +12,9 @@
           research and a creative mind. Learning the users need and experience and giving them the
           product they need. All desgins below are made by me.
         </h2>
-        <div class="flex justify-end w-full sm-max:justify-center h-full sm-max:items-center">
+        <div
+          class="flex justify-end items-end w-full sm-max:justify-center h-full sm-max:items-center"
+        >
           <div class="text-white font-bold rounded-sm shadow-md mx-4">
             Scroll down to learn more
           </div>
