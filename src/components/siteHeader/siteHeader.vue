@@ -13,9 +13,11 @@
           product they need. All desgins below are made by me.
         </h2>
         <div
-          class="flex justify-end items-end w-full sm-max:justify-center h-full sm-max:items-center"
+          class="flex justify-end items-end w-full sm-max:justify-center h-full sm-max:items-center relative"
         >
-          <div class="text-white font-bold rounded-sm shadow-md mx-4 transition-all">
+          <div
+            class="text-white font-bold rounded-sm shadow-md whitespace-nowrap transition-all absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
             <p>Scroll down to learn more</p>
           </div>
         </div>
