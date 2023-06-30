@@ -33,16 +33,12 @@
           </h2>
           <div class="flex mx-4 sm-max:mx-8 flex-col">
             <div class="flex items-center gap-4">
+              <a class="btn-style-shell" href="mailto: perhakman@outlook.com">Send Email</a>
               <a
-                class="py-3 sm-max:text-xs px-8 border-2 border-white whitespace-nowrap"
-                href="mailto: perhakman@outlook.com"
-                >Send Email</a
-              >
-              <a
-                class="py-3 sm-max:text-xs px-8 border-2 border-white whitespace-nowrap"
+                class="btn-style-shell"
                 href="https://dl.dropboxusercontent.com/s/b8otlf67sp5q29p/Pelle%20H%C3%A5kman.pdf?dl=0"
                 download
-                >Download resume (CV)</a
+                >Download (CV)</a
               >
             </div>
             <div class="pt-8 text-base font-light">
@@ -57,12 +53,19 @@
       </div>
     </div>
     <div class="w-full flex justify-center h-full items-end p-12">
-      <button @click="restart" class="py-3 px-12 bg-white font-sofia">RESTART</button>
+      <button @click="restart" class="btn-style-fill">RESTART</button>
     </div>
   </div>
 </template>
 
 <style>
+.btn-style-shell {
+  @apply text-white font-sofia py-3 sm-max:text-xs px-8 border-2 border-white hover:bg-white hover:text-black active:bg-stone-300 active:border-stone-300;
+}
+
+.btn-style-fill {
+  @apply text-black font-sofia py-3 sm-max:text-xs px-8 border-2 border-black bg-white hover:bg-black hover:text-white active:bg-stone-300 active:bg-transparent;
+}
 .about-container {
   @apply flex min-h-screen bg-black overflow-hidden;
 }

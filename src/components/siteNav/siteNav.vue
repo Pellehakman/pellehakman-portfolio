@@ -12,10 +12,16 @@
       </div>
       <div class="flex gap-12 sm-max:gap-4">
         <button @click="end">
-          <span class="text-base font-sofia">ABOUT</span>
+          <span
+            class="text-base font-sofia border-b-4 border-transparent duration-300 transition-all hover:border-b-4 hover:border-white"
+            >ABOUT</span
+          >
         </button>
         <button @click="end">
-          <span class="text-base font-sofia">RESUME</span>
+          <span
+            class="text-base font-sofia border-b-4 border-transparent duration-300 transition-all hover:border-b-4 hover:border-white"
+            >RESUME</span
+          >
         </button>
       </div>
       <div class="bg-pink-700 left-0 obj1 colorBomb" />
