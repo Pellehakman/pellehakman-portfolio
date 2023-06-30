@@ -15,7 +15,7 @@
         <div
           class="flex justify-end items-end w-full sm-max:justify-center h-full sm-max:items-end"
         >
-          <div class="text-white font-bold rounded-sm shadow-md mx-4">
+          <div class="text-white font-bold rounded-sm shadow-md mt-auto mx-4">
             Scroll down to learn more
           </div>
         </div>

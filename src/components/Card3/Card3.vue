@@ -27,7 +27,7 @@
         <img class="hover:scale-105 transition-all duration-6000" :src="lr2" alt="" />
       </div>
       <div class="lr-container">
-        <div v-motion-slide-visible-once-right :delay="900" class="r-container">
+        <div v-motion-slide-visible-once-right :delay="300" class="r-container">
           <div class="flex justify-center items-center text-center w-96 p-12 lg-max:hidden">
             <p class="text-container text-left">
               Embodying the essence of your brand, the resulting designs will leave a lasting impact
