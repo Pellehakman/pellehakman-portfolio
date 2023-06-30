@@ -1,8 +1,8 @@
 <script src="./Card2.ts" lang="ts"></script>
 
 <template>
-  <div class="card2-container py-12">
-    <div class="card2-text" v-motion-slide-visible-once-left :delay="300">
+  <div class="card2-container py-12" v-motion-slide-visible-once-left :delay="300">
+    <div class="card2-text">
       <p>
         Learning the user <span class="font-black">needs</span> and
         <span class="font-black">desires</span>, I deliver a tailored product experience.
@@ -18,7 +18,7 @@
           </div>
         </div>
       </div>
-      <div v-motion-fade-visible-once :delay="900">
+      <div v-motion-fade-visible-once :delay="300">
         <div
           class="bg-teal-700 opacity-50 rounded-full w-64 h-64 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
         ></div>
@@ -45,7 +45,7 @@
 
 <style>
 .card2-container {
-  @apply flex flex-col justify-center min-h-screen overflow-x-hidden;
+  @apply flex flex-col justify-center min-h-screen;
 }
 .lr-container {
   @apply w-full flex items-center relative;

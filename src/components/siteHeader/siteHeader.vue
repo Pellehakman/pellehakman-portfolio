@@ -1,7 +1,7 @@
 <script src="./siteHeader.ts" lang="ts"></script>
 
 <template>
-  <header class="h-[calc(100vh-80px)] flex flex-col">
+  <header class="min-h-[calc(100vh-80px)] flex flex-col">
     <div class="max-w-6xl mx-auto flex h-[calc(100dvh-80px)] sm-max:py-8 py-24 px-4 sm-max:px-8">
       <section class="text-white flex flex-col justify-start">
         <h1 class="font-staatliches text-8xl sm-max:text-8xl">
