@@ -8,7 +8,6 @@
   <SiteCode />
   <DesignSystem />
   <About />
-  <siteFooter />
 </template>
 
 <style></style>

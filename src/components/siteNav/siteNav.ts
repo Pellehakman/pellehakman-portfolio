@@ -23,7 +23,15 @@ export default defineComponent({
       window.addEventListener('scroll', handleScroll)
     })
 
+    const end = () => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+      })
+    }
+
     return {
+      end,
       navbarRef
     }
   }

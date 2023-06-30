@@ -40,7 +40,7 @@
   @apply text-white sm-max:px-8  mt-12 flex items-center justify-center text-center font-extralight font-sofia sm:hidden px-4;
 }
 .middle-container {
-  @apply w-full h-full flex justify-center items-center flex-col;
+  @apply w-full h-full flex justify-center items-center flex-col overflow-x-hidden;
 }
 .card3-text {
   @apply h-full w-80 flex sm-max:hidden items-end text-white font-sofia text-xl  px-4;

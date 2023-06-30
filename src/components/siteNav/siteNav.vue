@@ -11,12 +11,12 @@
         <span class="text-3xl sm-max:text-lg">WEB DESIGNER & DEVELOPER</span>
       </div>
       <div class="flex gap-12 sm-max:gap-4">
-        <RouterLink class="two" to="/">
+        <button @click="end">
           <span class="text-base font-sofia">ABOUT</span>
-        </RouterLink>
-        <RouterLink to="/resume">
+        </button>
+        <button @click="end">
           <span class="text-base font-sofia">RESUME</span>
-        </RouterLink>
+        </button>
       </div>
       <div class="bg-pink-700 left-0 obj1 colorBomb" />
       <div class="bg-purple-950 left-32 obj2 colorBomb" />

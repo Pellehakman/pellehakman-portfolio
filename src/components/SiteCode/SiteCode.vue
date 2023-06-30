@@ -2,19 +2,22 @@
 
 <template>
   <div class="code-container bak1">
-    <div class="max-w-6xl mx-auto flex flex-col sm-max:py-8 py-12 pt-24 relative">
-      <section class="text-white flex flex-col justify-start relative">
-        <h1 class="font-staatliches text-8xl sm-max:text-5xl text-black sm-max:px-8 px-4">
-          CODE & <span class="text-white">DEVELOP</span>
-        </h1>
+    <div
+      class="max-w-6xl text-black mx-auto flex flex-col sm-max:pb-8 sm-max:pt-0 py-12 pt-24 relative"
+    >
+      <section
+        class="flex flex-col justify-start relative bg-white p-12 sm-max:p-8 drop-shadow-2xl rounded-sm"
+      >
+        <h1 class="font-staatliches text-8xl sm-max:text-5xl">CODE & DEVELOP</h1>
 
-        <h2 class="text-xl font-sofia font-thin py-4 sm-max:text-base sm-max:px-8 px-4">
+        <h2 class="font-sofia font-regular text-lg py-4 sm-max:text-base">
           Keywords in programming for me is, VUE 3 composition api, REACT, Firebase, auth, pinia.
           Tailwind, scss, css. Eslint, prettier, clean code.
         </h2>
       </section>
       <div class="hej">
-        <div class="absolute inset-0 overflow-x-hidden">
+        <!-- <img src="@/assets/pictures/m1.png" alt="" /> -->
+        <!-- <div class="absolute inset-0 overflow-x-hidden">
           <img
             src="@/assets/pictures/1.png"
             alt="Image 1"
@@ -36,7 +39,7 @@
             alt="Image 3"
             class="c h-full object-cover w-full sm-max:h-3/4 drop-shadow-2x"
           />
-        </div>
+        </div> -->
 
         <div
           :class="{ 'right-0 absolute': isClosed }"
@@ -44,10 +47,14 @@
         >
           <div
             :class="{ 'right-0 absolute pl-0 rounded-md': isClosed }"
-            class="bg-pink-900 h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-white"
+            class="bg-[#c74b2e] hover:bg-[#a8452f]  h-12 flex justify-between rounded-t-md items-center pl-4 font-sofia text-white"
           >
             <h3 v-if="!isClosed">code example</h3>
-            <button @click="close" class="rounded-full p-4 flex justify-center items-center">
+            <button
+              @click="close"
+              :class="{ 'pl-0': isClosed }"
+              class="rounded-full p-4 flex justify-center items-center"
+            >
               <font-awesome-icon
                 v-if="!isClosed"
                 class="flex items-center"
@@ -167,8 +174,11 @@ pre {
 }
 
 .bak1 {
-  background: linear-gradient(to bottom, #c74b2e 90%, #fffaf2 10%);
-  background: #c74b2e;
+  /* background: linear-gradient(to bottom, #c74b2e 90%, #fffaf2 10%);
+  background: #c74b2e; */
+  background-image: url('@/assets/pictures/m1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .animateIn {
   @apply transition-all duration-1000 translate-x-0 opacity-100;
