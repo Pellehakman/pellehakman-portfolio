@@ -2,7 +2,7 @@
 
 <template>
   <div class="card2-container py-12">
-    <div class="card2-text" v-motion-slide-visible-once-left :delay="300">
+    <div class="card2-text" v-motion-fade-visible-once :delay="300">
       <p>
         <span class="font-black">Creating lofi wireframes</span> that encapsulate your brand's
         essence, I prioritize your satisfaction before progressing to the
@@ -20,9 +20,9 @@
           </div>
         </div>
       </div>
-      <div v-motion-fade-visible-once :delay="900">
+      <div v-motion-fade-visible-once :delay="300">
         <div
-          class="bg-pink-500 animate-pulse opacity-50 rounded-full w-64 h-64 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
+          class="bg-pink-500 opacity-40 rounded-full sm-max:w-64 sm-max:h-64 animate-pulse w-[512px] h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
         ></div>
         <img class="hover:scale-105 transition-all duration-6000" :src="lr2" alt="" />
       </div>
@@ -37,7 +37,7 @@
         </div>
       </div>
     </div>
-    <div class="card2-text" v-motion-slide-visible-once-right :delay="100">
+    <div class="card2-text" v-motion-fade-visible-once>
       <p class="">
         Embodying the essence of <span class="font-black">your brand</span>, the resulting designs
         will leave a <span class="font-black">lasting impact</span> on your users.
@@ -47,8 +47,11 @@
 </template>
 
 <style>
+.animate-pulse {
+  @apply duration-4000;
+}
 .card2-container {
-  @apply flex flex-col justify-center min-h-screen;
+  @apply flex flex-col justify-center min-h-screen overflow-x-hidden;
 }
 .lr-container {
   @apply w-full flex items-center relative;

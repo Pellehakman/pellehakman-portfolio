@@ -1,7 +1,7 @@
 <script src="./Card2.ts" lang="ts"></script>
 
 <template>
-  <div class="card2-container py-12" v-motion-slide-visible-once-left :delay="300">
+  <div class="card2-container py-12" v-motion-fade-visible-once :delay="400">
     <div class="card2-text">
       <p>
         Learning the user <span class="font-black">needs</span> and
@@ -10,7 +10,7 @@
     </div>
     <div class="flex py-12">
       <div class="lr-container">
-        <div v-motion-slide-visible-once-left :delay="300" class="l-container">
+        <div class="l-container">
           <div class="flex justify-center text-center w-96 p-12 lg-max:hidden">
             <p class="text-container text-right">
               Learning the user needs and desires, I deliver a tailored product experience.
@@ -18,14 +18,14 @@
           </div>
         </div>
       </div>
-      <div v-motion-fade-visible-once :delay="300">
+      <div>
         <div
-          class="bg-teal-700 opacity-50 rounded-full w-64 h-64 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
+          class="bg-teal-700 opacity-40 rounded-full sm-max:w-64 sm-max:h-64 animate-pulse w-[512px] h-96 -z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
         ></div>
         <img class="hover:scale-105 transition-all duration-6000" :src="lr" alt="" />
       </div>
       <div class="lr-container">
-        <div v-motion-slide-visible-once-right :delay="900" class="r-container">
+        <div class="r-container">
           <div class="flex justify-center items-center text-center w-96 p-12 lg-max:hidden">
             <p class="text-container text-left">
               A product that integrates both user experience and interface design.
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="card2-text" v-motion-slide-visible-once-right :delay="300">
+    <div class="card2-text">
       <p class="">
         A product that integrates both user <span class="font-black">experience</span> and interface
         <span class="font-black">design</span>.

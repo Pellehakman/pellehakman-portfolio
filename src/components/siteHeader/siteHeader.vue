@@ -12,7 +12,9 @@
           research and a creative mind. Learning the users need and experience and giving them the
           product they need. All desgins below are made by me.
         </h2>
-        <div class="flex-grow  flex justify-end items-end">
+        <p class="text-white font-bold font-sofia mx-auto mt-auto sm:hidden">Scroll down to learn more</p>
+
+        <div class="flex-grow flex justify-end items-end sm-max:hidden">
           <p class="text-white font-bold font-sofia">Scroll down to learn more</p>
         </div>
 

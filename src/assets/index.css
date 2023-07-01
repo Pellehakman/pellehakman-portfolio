@@ -27,7 +27,7 @@
     @apply  bg-background h-full w-full transition-all ;
   }
   #app {
-    @apply h-full w-full transition-all flex flex-col overflow-x-hidden ;
+    @apply h-full w-full transition-all flex flex-col ;
   }
 }
 
