@@ -155,7 +155,7 @@ pre {
 .bak1 {
   /* background: linear-gradient(to bottom, #c74b2e 90%, #fffaf2 10%);
   background: #c74b2e; */
-  background-image: url('@/assets/pictures/m1.png');
+  background-image: url('@/assets/pictures/m1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
