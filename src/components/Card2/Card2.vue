@@ -1,7 +1,11 @@
 <script src="./Card2.ts" lang="ts"></script>
 
 <template>
-  <div class="card2-container py-12" v-motion-fade-visible-once :delay="400">
+  <div
+    class="card2-container py-12 bg-slate-950 bg-opacity-40"
+    v-motion-fade-visible-once
+    :delay="400"
+  >
     <div class="card2-text">
       <p>
         Learning the user <span class="font-black">needs</span> and
