@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="card2-container py-12 bg-slate-950 bg-opacity-40"
+    class="card2-container py-12 bg-teal-950 bg-opacity-20"
     v-motion-fade-visible-once
     :delay="400"
   >
@@ -12,7 +12,7 @@
         <span class="font-black">desires</span>, I deliver a tailored product experience.
       </p>
     </div>
-    <div class="flex py-12">
+    <div class="flex my-auto">
       <div class="lr-container">
         <div class="l-container">
           <div class="flex justify-center text-center w-96 p-12 lg-max:hidden">

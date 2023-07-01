@@ -66,83 +66,62 @@
           <pre
             :class="{ 'opacity-0 hidden': isClosed }"
             class="text-white p-8 overflow-y-scroll h-full rounded-bl-lg bg-stone-900 transition-all shadow-2xl"
-          ><code class="text-xs ">import { defineComponent, onMounted, ref } from 'vue'
-import pic from '@/assets/pic.png'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import doubleChevronDown from '@/assets/doubleChevronDown.svg'
-import type SwiperClass from 'swiper'
-import { Pagination, Navigation } from 'swiper'
-import $firebaseService from '@/services/FirebaseService'
-import type { RecipeModel } from '@/models/RecipeModel'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import $helperRandom from '@/helpers/helperRandom'
-import Recipe from '../Recipe/Recipe.vue'
-import $helperFilter from '@/helpers/helperFilter'
-import $helperResults from '@/helpers/helperResults'
-import $edamam from '@/services/Edamam'
+          >
+<code class="text-xs ">export default defineComponent({
+name: 'RecipeView',
+components: { Swiper, SwiperSlide, Recipe },
+setup() {
+  const show = ref(false)
 
-export default defineComponent({
-  name: 'RecipeView',
-  components: { Swiper, SwiperSlide, Recipe },
-  setup() {
-    onMounted(async () => {
-      $edamam.SearchRecipes()
-      const data = await $firebaseService.getRecipes()
-      // recipes.value = $helperRandom.shuffle(data.recipes)
-      recipes.value = $helperResults.result(
-        $helperFilter.diet($helperFilter.allergies(data.recipes))
-      )
-      // recipes.value = $helperFilter.allergies(data.recipes)
-    })
-    const show = ref(false)
+let swiperRef: SwiperClass | null = null
+const setSwiperRef = (swiper: SwiperClass) => {
+  swiperRef = swiper
+}
 
-    const recipes = ref()
+const clickSwipe = () => {
+  swiperRef?.slideNext()
+}
 
-    let swiperRef: SwiperClass | null = null
-    const setSwiperRef = (swiper: SwiperClass) => {
-      swiperRef = swiper
-    }
+const onSlideChange = () => {
+  readMore.value = false
+}
 
-    const clickSwipe = () => {
-      swiperRef?.slideNext()
-    }
-    const readMore = ref(false)
-    const onSlideChange = () => {
-      readMore.value = false
-    }
-    const emitClose = (value: boolean) => {
-      show.value = value
-    }
+const emitClose = (value: boolean) => {
+  show.value = value
+}
 
-    const handleRecipe = () => {
-      show.value = !show.value
-    }
-    const swiperTextBase = ref(recipes)
-    const activeInstructions = ref(false)
-    const activeIngrediens = ref(false)
+const handleRecipe = () => {
+  show.value = !show.value
+}
 
-    return {
-      onSlideChange,
-      activeInstructions,
-      activeIngrediens,
-      show,
-      doubleChevronDown,
-      modules: [Pagination, Navigation],
-      swiperTextBase,
-      clickSwipe,
-      setSwiperRef,
-      pic,
-      readMore,
-      handleRecipe,
+const activeInstructions = ref(false)
+const activeIngrediens = ref(false)
 
-      emitClose
-    }
-  }
+onMounted(async () => {
+const data = await $firebaseService.getRecipes()
+recipes.value = $helperResults.result(
+  $helperFilter.diet($helperFilter.allergies(data.recipes))
+)
 })
 
-        </code>
+const readMore = ref(false)
+const swiperTextBase = ref(recipes)
+
+return {
+  onSlideChange,
+  activeInstructions,
+  activeIngrediens,
+  show,
+  modules: [Pagination, Navigation],
+  swiperTextBase,
+  clickSwipe,
+  setSwiperRef,
+  readMore,
+  handleRecipe,
+  emitClose
+}
+}
+})</code>
       </pre>
         </div>
       </div>
