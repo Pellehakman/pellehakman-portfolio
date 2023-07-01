@@ -4,8 +4,7 @@
   <div class="card2-container py-12 bg-pink-900 bg-opacity-10">
     <div class="card2-text" v-motion-fade-visible-once :delay="300">
       <p>
-        <span class="font-black">Creating lofi wireframes</span> that encapsulate your brand's
-        essence, I prioritize your satisfaction before progressing to the
+        Your brand's essence, your satisfaction before progressing to the
         <span class="font-black">hifi design phase</span>.
       </p>
     </div>
@@ -14,8 +13,7 @@
         <div v-motion-slide-visible-once-left :delay="300" class="l-container">
           <div class="flex justify-center text-center w-96 p-12 lg-max:hidden">
             <p class="text-container text-right">
-              Creating lofi wireframes that encapsulate your brand's essence, I prioritize your
-              satisfaction before progressing to the hifi design phase.
+              Your brand's essence, your satisfaction before progressing to the hifi design phase.
             </p>
           </div>
         </div>
