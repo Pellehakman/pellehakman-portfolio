@@ -1,5 +1,4 @@
 import { defineComponent, ref } from 'vue'
-import recipe from '@/assets/pictures/recipe.png'
 import { motionPhone1, motionPhone2, motionPhone3 } from '@/motions/motions'
 import DesignSystem from '../DesignSystem/DesignSystem.vue'
 
@@ -24,8 +23,7 @@ export default defineComponent({
       motionPhone3,
       targetA,
       targetB,
-      targetC,
-      recipe
+      targetC
     }
   }
 })
