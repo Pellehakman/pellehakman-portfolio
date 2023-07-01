@@ -12,7 +12,7 @@
         <span class="font-black">desires</span>, I deliver a tailored product experience.
       </p>
     </div>
-    <div class="flex my-auto">
+    <div class="flex my-auto py-12">
       <div class="lr-container">
         <div class="l-container">
           <div class="flex justify-center text-center w-96 p-12 lg-max:hidden">

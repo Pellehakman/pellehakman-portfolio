@@ -9,7 +9,7 @@
         <span class="font-black">hifi design phase</span>.
       </p>
     </div>
-    <div class="flex my-auto">
+    <div class="flex my-auto py-12">
       <div class="lr-container">
         <div v-motion-slide-visible-once-left :delay="300" class="l-container">
           <div class="flex justify-center text-center w-96 p-12 lg-max:hidden">
