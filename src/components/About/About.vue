@@ -35,7 +35,7 @@
               <a class="btn-style-shell" href="mailto: perhakman@outlook.com">Send Email</a>
               <a
                 class="btn-style-shell"
-                href="https://dl.dropboxusercontent.com/s/b8otlf67sp5q29p/Pelle%20H%C3%A5kman.pdf?dl=0"
+                href="https://www.dropbox.com/scl/fi/xn03ccr71k72p4ctayfmm/Pelle-H-kman.pdf?rlkey=s3ayw7deu2hr70lv7uqig22ie&dl=1"
                 download
                 >Download (CV)</a
               >
